@@ -1,0 +1,82 @@
+body {
+  background-color: white;
+}
+/* align-scale */
+.align-center {
+  align-items: center;
+}
+
+/* justification-sclae */
+.justify-content-l {
+  align-content: space-between;
+  justify-content: left;
+}
+
+/* Display-scale */
+.d-flex {
+  display: flex;
+}
+.d-block {
+  display: block;
+}
+.d-flex.row {
+  flex-direction: row;
+}
+.d-flex.col {
+  flex-direction: column;
+}
+/* Margin-scale */
+.mb-2 {
+  margin-top: 2px;
+}
+.mb-4 {
+  margin-bottom: 4px;
+}
+.ml-auto {
+  margin-left: 50%;
+}
+.mr-auto {
+  margin-right: 50%;
+}
+.m-auto {
+  margin: auto;
+}
+.m-0 {
+  margin: 0 auto;
+}
+/* font */
+.f-center {
+  text-align: center;
+}
+.f-l {
+  text-align: left;
+}
+/* Font Color */
+.f-white {
+  color: white;
+}
+/* font Size */
+.f-20px {
+  font-size: 20px;
+}
+.f-40px {
+  font-size: 40px;
+}
+
+.f-60px {
+  font-size: 60px;
+}
+/* Font Style */
+.f-bold {
+  font-weight: bold;
+}
+/* Mouse Style */
+.mouse-p {
+  cursor: pointer;
+}
+/* Field */
+.in-oval {
+  width: 50vh;
+  height: 4vh;
+  border-radius: 20px;
+}
