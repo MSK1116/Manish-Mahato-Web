@@ -1,17 +1,154 @@
+:root {
+  --primary-color: #044cac;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #e74a3b;
+  --orange: #fd7e14;
+  --yellow: #f6c23e;
+  --green: #1cc88a;
+  --teal: #20c9a6;
+  --cyan: #36b9cc;
+  --white: #fff;
+  --gray: #858796;
+  --gray-dark: #5a5c69;
+  --primary: #4e73df;
+  --secondary: #858796;
+  --success: #1cc88a;
+  --info: #36b9cc;
+  --warning: #f6c23e;
+  --danger: #e74a3b;
+  --light: #f8f9fc;
+  --dark: #5a5c69;
+  --primary-color-yellow: #ffca0f;
+  --font-family-sans-serif: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Noto Color Emoji";
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
 body {
   background-color: white;
+  color: black;
+  margin: 0px;
+  padding: 0px;
+  font-family: Nunito, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
+/* nav */
+nav {
+  opacity: 0.9;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0px;
+  top: 0px;
+  position: fixed;
+  height: 90px;
+  width: 100%;
+  background-color: #044cac;
+  border-bottom-right-radius: 21px;
+  border-bottom-left-radius: 21px;
+  transition: border-bottom-left-radius 2s ease-in-out, border-bottom-right-radius 2s ease-in-out, opacity 2s ease-in-out;
+}
+nav button {
+  background-color: transparent;
+}
+nav:hover {
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  margin-top: 0px;
+  top: 0px;
+  height: 90px;
+  background-color: #044cac;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+#nav-down {
+  background-color: transparent;
+  border: 0px;
+  width: auto;
+  height: auto;
+  top: 09px;
+  position: fixed;
+  z-index: 10000;
+}
+#nav-up {
+  border: 0px;
+  background-color: var(--primary-color);
+  color: var(--primary-color-yellow);
+  font-size: 25px;
+}
+#nav-down-1 {
+  font-weight: bolder;
+  font-size: larger;
+  position: fixed;
+  color: rgb(231, 16, 16);
+}
+#nav-down-1:hover {
+  font-weight: bolder;
+  font-size: larger;
+  position: fixed;
+  color: red;
+}
+nav a {
+  color: whitesmoke;
+  text-decoration: none;
+  transition: font-size 1s ease-out;
+}
+nav a:hover {
+  font-size: larger;
+  transform: scale(1.1);
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.nav-item {
+  display: flex;
+  margin-right: 25px;
+  display: flex;
+  align-items: center;
+}
+
+/* Add your other CSS styles as needed */
+
+/* content */
+.content {
+  bottom: 50px;
+}
+/* list */
+ul.no-style {
+  list-style: none;
+}
+/* list */
+/* color */
+.primary-color-bg {
+  background-color: var(--primary-color);
+}
+.primary-color-yellow-bg {
+  background-color: var(--primary-color-yellow);
+}
+/* color */
 /* align-scale */
 .align-center {
   align-items: center;
 }
-
+.align-right {
+  align-items: right;
+}
+.float-right {
+  float: right;
+}
 /* justification-sclae */
 .justify-content-l {
-  align-content: space-between;
   justify-content: left;
 }
+.justify-content-center {
+  justify-content: center;
+}
 
+.justify-content-between {
+  justify-content: space-between;
+}
 /* Display-scale */
 .d-flex {
   display: flex;
@@ -26,14 +163,59 @@ body {
   flex-direction: column;
 }
 /* Margin-scale */
-.mb-2 {
+.mb-2px {
   margin-top: 2px;
 }
-.mb-4 {
+.mb-4px {
   margin-bottom: 4px;
+}
+.mb-6px {
+  margin-bottom: 6px;
+}
+.mb-8px {
+  margin-bottom: 8px;
+}
+.mb-auto {
+  margin-bottom: auto;
+}
+.ml-2px {
+  margin-left: 2px;
+}
+.ml-4px {
+  margin-left: 4px;
+}
+.ml-6px {
+  margin-left: 6px;
+}
+.ml-8px {
+  margin-left: 8px;
 }
 .ml-auto {
   margin-left: 50%;
+}
+.mr-2px {
+  margin-right: 2px;
+}
+.mr-4px {
+  margin-right: 4px;
+}
+.mr-6px {
+  margin-right: 6px;
+}
+.mr-8px {
+  margin-right: 8px;
+}
+.mr-10px {
+  margin-right: 10px;
+}
+.mr-15px {
+  margin-right: 15px;
+}
+.mr-20px {
+  margin-right: 20px;
+}
+.mr-25px {
+  margin-right: 25px;
 }
 .mr-auto {
   margin-right: 50%;
@@ -44,6 +226,25 @@ body {
 .m-0 {
   margin: 0 auto;
 }
+/* padding */
+.p-2px {
+  padding: 2px;
+}
+.p-4px {
+  padding: 4px;
+}
+.p-6px {
+  padding: 6px;
+}
+.p-8px {
+  padding: 8px;
+}
+.p-10px {
+  padding: 10px;
+}
+.p-auto {
+  padding: auto;
+}
 /* font */
 .f-center {
   text-align: center;
@@ -51,13 +252,37 @@ body {
 .f-l {
   text-align: left;
 }
+.f-r {
+  text-align: right;
+}
 /* Font Color */
 .f-white {
   color: white;
 }
+.f-primary {
+  color: var(--primary-color);
+}
+.f-primary-yellow {
+  color: var(--primary-color-yellow);
+}
+.f-primary-orange {
+  color: var(--orange);
+}
+.f-primary-indigo {
+  color: var(--indigo);
+}
 /* font Size */
+.f-10px {
+  font-size: 10px;
+}
+.f-15px {
+  font-size: 15px;
+}
 .f-20px {
   font-size: 20px;
+}
+.f-25px {
+  font-size: 25px;
 }
 .f-40px {
   font-size: 40px;
@@ -69,6 +294,9 @@ body {
 /* Font Style */
 .f-bold {
   font-weight: bold;
+}
+.f-bold-x {
+  font-weight: bolder;
 }
 /* Mouse Style */
 .mouse-p {
