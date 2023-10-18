@@ -69,7 +69,8 @@ nav:hover {
   border: 0px;
   width: auto;
   height: auto;
-  top: 09px;
+  top: 100px;
+
   position: fixed;
   z-index: 10000;
 }
