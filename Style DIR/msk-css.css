@@ -29,7 +29,7 @@ body {
   background-color: white;
   color: black;
   margin: 0px;
-  padding: 0px;
+  padding: 4px;
   font-family: Nunito, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 /* nav */
@@ -40,6 +40,7 @@ nav {
   justify-content: space-between;
   margin-top: 0px;
   top: 0px;
+  z-index: 9999;
   position: fixed;
   height: 90px;
   width: 100%;
@@ -48,6 +49,24 @@ nav {
   border-bottom-left-radius: 21px;
   transition: border-bottom-left-radius 2s ease-in-out, border-bottom-right-radius 2s ease-in-out, opacity 2s ease-in-out;
 }
+@media (max-width: 500px) {
+  nav {
+    opacity: 0.9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0px;
+    top: 0px;
+    z-index: 9999;
+    height: 90px;
+    width: 100%;
+    background-color: #ac7104;
+    border-bottom-right-radius: 21px;
+    border-bottom-left-radius: 21px;
+    transition: border-bottom-left-radius 2s ease-in-out, border-bottom-right-radius 2s ease-in-out, opacity 2s ease-in-out;
+  }
+}
+
 nav button {
   background-color: transparent;
 }
@@ -56,6 +75,7 @@ nav:hover {
   display: flex;
   align-items: center;
   margin-top: 0px;
+  z-index: 999999;
   top: 0px;
   height: 90px;
   background-color: #044cac;
@@ -109,13 +129,14 @@ nav a:hover {
   display: flex;
   align-items: center;
 }
-
-/* Add your other CSS styles as needed */
-
 /* content */
 .content {
-  bottom: 50px;
+  margin-top: 100px;
+  color: red;
+  padding: 10px;
+  box-shadow: #e74a3b;
 }
+
 /* list */
 ul.no-style {
   list-style: none;
@@ -308,4 +329,26 @@ ul.no-style {
   width: 50vh;
   height: 4vh;
   border-radius: 20px;
+}
+/* profile & image */
+.head-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 50%;
+  /* height: fit-content;
+  width: fit-content; */
+  width: 500px;
+  height: 600px;
+  margin: 0 auto;
+}
+.head-1 img {
+  width: 100%;
+  height: 90%;
+  max-height: 100%;
+  transition: transform 1s ease-in-out;
+}
+.head-1 img:hover {
+  transform: scaleX(1.09);
 }
