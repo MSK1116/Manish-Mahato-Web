@@ -386,7 +386,7 @@ ul.no-style {
   max-height: 100%;
   width: auto;
   height: auto;
-  display: block; /* Remove extra spacing below the image */
+  display: block;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   border-radius: 8px;
