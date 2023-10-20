@@ -5,7 +5,7 @@ $(document).ready(function () {
   $(window).scroll(function () {
     var newScrollPos = $(window).scrollTop();
     if (newScrollPos > scrollPos) {
-      $("nav").slideUp(1000);
+      $("nav").slideUp(900);
       $(".nav-item").slideUp(1000);
       x = true;
       down();
