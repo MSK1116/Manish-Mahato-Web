@@ -332,7 +332,7 @@ ul.no-style {
 .container-1 {
   width: 99%;
   margin: 0 auto;
-  height: 90vh;
+  height: auto;
   background-color: #6610f2;
   border-radius: 10px;
   display: flex;
@@ -345,6 +345,15 @@ ul.no-style {
   padding-right: 0px;
   transition: 0.2s ease-in-out;
   /* font */
+}
+@media (max-width: 768px) {
+  .container-1 {
+    flex-direction: column;
+  }
+  .container-1 img {
+    width: 99%;
+    height: 99vh;
+  }
 }
 .container-1:hover {
   transform: scale(1.003);
