@@ -336,8 +336,8 @@ ul.no-style {
   background-color: #6610f2;
   border-radius: 10px;
   display: flex;
-
   box-sizing: border-box;
+  align-content: center;
   justify-content: space-between; /* Align contents to the left */
   overflow: hidden;
   padding-top: 3px;
@@ -385,20 +385,4 @@ ul.no-style {
 }
 .container-1 img:hover {
   transform: translateX(-5px);
-}
-
-.type {
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 1px solid white;
-  animation: typing 3s steps(20) 5s infinite;
-}
-@keyframes typing {
-  0% {
-    width: 10%;
-  }
-
-  100% {
-    width: 100%;
-  }
 }
