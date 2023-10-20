@@ -370,6 +370,16 @@ ul.no-style {
   justify-content: center;
   max-width: max-content;
   height: fit-content;
+  transition: transform 1s ease-in-out;
+}
+.container-1 .head-1:hover {
+  transform: scale(1.02) translateY(5px);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: max-content;
+  height: fit-content;
 }
 
 .container-1 img {
