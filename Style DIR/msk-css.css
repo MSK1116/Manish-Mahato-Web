@@ -352,18 +352,15 @@ ul.no-style {
 .container-1 h1 {
   font-size: 6vh;
   color: var(--white);
-  margin-left: 3vh;
 }
 
 .container-1 .head-1 {
   margin: 0 auto;
-  width: auto;
-  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: auto;
-  height: auto;
+  max-width: max-content;
+  height: fit-content;
 }
 
 .container-1 img {
