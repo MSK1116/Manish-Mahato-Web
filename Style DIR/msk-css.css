@@ -336,8 +336,10 @@ ul.no-style {
   background-color: #6610f2;
   border-radius: 10px;
   display: flex;
-  justify-content: space-between; /* Align contents to the left */
 
+  box-sizing: border-box;
+  justify-content: space-between; /* Align contents to the left */
+  overflow: hidden;
   padding-top: 3px;
   padding: 4px;
   padding-right: 0px;
@@ -354,18 +356,21 @@ ul.no-style {
 }
 
 .container-1 .head-1 {
+  margin: 0 auto;
+  width: auto;
+  height: auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: center;
   width: auto;
   height: auto;
 }
 
 .container-1 img {
-  max-width: 100%;
   max-height: 100%;
-  height: auto;
   width: auto;
+  height: auto;
+  display: block; /* Remove extra spacing below the image */
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   border-radius: 8px;
