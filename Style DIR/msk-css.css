@@ -387,7 +387,7 @@ ul.no-style {
   border-radius: 10px;
   display: flex;
   box-sizing: border-box;
-
+  margin-bottom: 8vh;
   align-content: center;
   justify-content: space-between; /* Align contents to the left */
   overflow: hidden;
