@@ -72,7 +72,7 @@ if (vhW > 655) {
   $(".content").on("click", function () {
     if (x == true) {
       $("#nav-down").fadeIn(200);
-
+      $("#scroll1").fadeIn(200);
       $("nav").slideUp(900);
       $(".nav-item").slideUp(1000);
       x = false;
