@@ -66,6 +66,7 @@ nav {
     border-bottom-left-radius: 21px;
     transition: border-bottom-left-radius 2s ease-in-out, border-bottom-right-radius 2s ease-in-out, opacity 2s ease-in-out;
   }
+
   .nav-item {
     line-height: 8vh;
     flex-direction: column;
