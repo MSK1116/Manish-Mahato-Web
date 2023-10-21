@@ -71,14 +71,16 @@ nav {
     line-height: 8vh;
     flex-direction: column;
   }
+  #nav-down {
+    display: block;
+  }
 }
-
 nav button {
   background-color: transparent;
 }
+
 nav:hover {
   opacity: 1;
-
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
   overflow-x: hidden;
