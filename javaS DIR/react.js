@@ -1,7 +1,9 @@
 // variable
+
 var x = false;
 var vhW = window.innerWidth || document.documentElement.clientWidth;
 var vhH = window.innerHeight || document.documentElement.clientHeight;
+$("#scroll1").css("display", "none");
 if (vhW > 655) {
   console.log("Device scrren was found to be in ggod condition, Loading all the animation...");
   $(document).ready(function () {
@@ -11,6 +13,8 @@ if (vhW > 655) {
       if (newScrollPos > scrollPos) {
         $("nav").slideUp(900);
         $(".nav-item").slideUp(1000);
+        $("#scroll1").fadeIn(200);
+
         x = true;
         down();
         console.log(x);
@@ -18,6 +22,7 @@ if (vhW > 655) {
       if (newScrollPos < scrollPos) {
         $("nav").slideDown();
         $(".nav-item").slideDown();
+
         x = false;
         down();
       }
@@ -39,6 +44,7 @@ if (vhW > 655) {
     if (x == true) {
       console.log("activated");
       $("#nav-down").fadeIn(200); // Added this line to display "nav-down"
+
       $("#nav-down").on("click", function () {
         $("nav").slideDown();
         $(".nav-item").slideDown();
@@ -54,23 +60,33 @@ if (vhW > 655) {
   var x = false;
   if (x == false) {
     $("#nav-down").fadeIn(200);
+
     $("#nav-down").on("click", function () {
       $("nav").slideDown();
       $(".nav-item").slideDown();
       $("#nav-down").fadeOut(500);
+
       x = true;
     });
   }
   $(".content").on("click", function () {
     if (x == true) {
       $("#nav-down").fadeIn(200);
+
       $("nav").slideUp(900);
       $(".nav-item").slideUp(1000);
       x = false;
     }
   });
 }
-
+var y = false;
 $("#scroll1").on("click", function () {
   $("html, body").animate({ scrollTop: 0 }, "slow");
+  y = true;
+  fadeTheScroll1();
 });
+function fadeTheScroll1() {
+  if (y == true) {
+    $("#scroll1").fadeOut(2000);
+  }
+}
