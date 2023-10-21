@@ -26,7 +26,7 @@
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 body {
-  background-color: rgb(231, 222, 222);
+  background-color: #f5dc58;
   color: black;
   margin: 0px;
   padding: 3px;
@@ -86,11 +86,10 @@ nav:hover {
 }
 #nav-down {
   background-color: transparent;
+  width: 40px;
+  height: 40px;
   border: 0px;
-  width: auto;
-  height: auto;
   top: 100px;
-
   position: fixed;
   z-index: 10000;
 }
