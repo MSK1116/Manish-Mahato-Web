@@ -49,21 +49,26 @@ nav {
   border-bottom-left-radius: 21px;
   transition: border-bottom-left-radius 2s ease-in-out, border-bottom-right-radius 2s ease-in-out, opacity 2s ease-in-out;
 }
-@media (max-width: 500px) {
+@media (max-width: 655px) {
   nav {
+    display: none;
     opacity: 0.9;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     margin-top: 0px;
     top: 0px;
-
-    height: 90px;
-    width: 100%;
-    background-color: #ac7104;
+    z-index: 9999;
+    position: fixed;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 50vh;
+    width: 50vh;
+    background-color: var(--primary-color);
     border-bottom-right-radius: 21px;
     border-bottom-left-radius: 21px;
     transition: border-bottom-left-radius 2s ease-in-out, border-bottom-right-radius 2s ease-in-out, opacity 2s ease-in-out;
+  }
+  .nav-item {
+    line-height: 8vh;
+    flex-direction: column;
   }
 }
 
