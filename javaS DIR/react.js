@@ -44,7 +44,7 @@ if (vhW > 655) {
     if (x == true) {
       console.log("activated");
       $("#nav-down").fadeIn(200); // Added this line to display "nav-down"
-
+      $("#scroll1").fadeIn(200);
       $("#nav-down").on("click", function () {
         $("nav").slideDown();
         $(".nav-item").slideDown();
