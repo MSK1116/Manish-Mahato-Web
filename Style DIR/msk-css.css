@@ -21,8 +21,7 @@
   --light: #f8f9fc;
   --dark: #5a5c69;
   --primary-color-yellow: #ffca0f;
-  --font-family-sans-serif: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    "Noto Color Emoji";
+  --font-family-sans-serif: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 body {
@@ -149,6 +148,7 @@ ul.no-style {
 .primary-color-yellow-bg {
   background-color: var(--primary-color-yellow);
 }
+
 /* color */
 /* align-scale */
 .align-center {
@@ -185,8 +185,44 @@ ul.no-style {
   flex-direction: column;
 }
 /* Margin-scale */
-.mb-2px {
+.mt-2px {
   margin-top: 2px;
+}
+.mt-4px {
+  margin-top: 4px;
+}
+.mt-6px {
+  margin-top: 6px;
+}
+.mt-8px {
+  margin-top: 8px;
+}
+.mt-10px {
+  margin-top: 10px;
+}
+.mt-12px {
+  margin-top: 12px;
+}
+.mt-2vh {
+  margin-top: 2vh;
+}
+.mt-4vh {
+  margin-top: 4vh;
+}
+.mt-6vh {
+  margin-top: 6vh;
+}
+.mt-8vh {
+  margin-top: 8vh;
+}
+.mt-10vh {
+  margin-top: 10vh;
+}
+.mt-12vh {
+  margin-top: 12vh;
+}
+.mb-2px {
+  margin-bottom: 2px;
 }
 .mb-4px {
   margin-bottom: 4px;
@@ -325,6 +361,13 @@ ul.no-style {
 .f-bold-x {
   font-weight: bolder;
 }
+/* font-family */
+.f-family-1 {
+  font-family: serif;
+}
+.f-family-2 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
 /* Mouse Style */
 .mouse-p {
   cursor: pointer;
@@ -344,6 +387,7 @@ ul.no-style {
   border-radius: 10px;
   display: flex;
   box-sizing: border-box;
+
   align-content: center;
   justify-content: space-between; /* Align contents to the left */
   overflow: hidden;
@@ -369,6 +413,12 @@ ul.no-style {
   font-size: 6vh;
   color: var(--white);
 }
+.container-1 .head {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
 
 .container-1 .head-1 {
   margin: 0 auto;
@@ -381,14 +431,8 @@ ul.no-style {
 }
 .container-1 .head-1:hover {
   transform: scale(1.02) translateY(5px);
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  max-width: max-content;
-  height: fit-content;
 }
-
+/* transform: scale(1.02) translateY(5px); */
 .container-1 img {
   max-height: 100%;
   width: auto;
