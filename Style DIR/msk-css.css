@@ -478,6 +478,7 @@ ul.no-style {
 /* footer */
 footer {
   display: flex;
+  flex-direction: row;
   align-content: center;
   justify-content: space-between;
   font-size: 15px;
@@ -496,6 +497,8 @@ footer:hover {
   background-color: rgb(255, 255, 255);
 }
 .social-link {
+  display: flex;
+  flex-direction: row;
   padding: 10px;
   background-color: #ffffff;
   font-size: 25px;
