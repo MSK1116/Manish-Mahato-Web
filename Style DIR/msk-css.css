@@ -518,16 +518,19 @@ footer:hover {
   height: 30px;
 }
 .social-link-1 {
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
-  padding: 10px;
+  padding: 10px 10px 10px 10px;
   background-color: #ffffff;
-  font-size: 25px;
+  font-size: 30px;
   border-radius: 50px 50px 50px 50px;
   width: fit-content;
   height: 30px;
 }
-
+.social-link-1:hover {
+  background-color: #d8d9e0;
+}
 .social-link:hover {
   background-color: #d8d9e0;
 }
