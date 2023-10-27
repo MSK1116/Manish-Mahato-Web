@@ -99,5 +99,6 @@ $(document).ready(function () {
   }
   if (vhW > 566) {
     $(".social-link-1").css("display", "none");
+    $("#Name1").addClass("type");
   }
 });
