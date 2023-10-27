@@ -92,10 +92,12 @@ function fadeTheScroll1() {
 }
 
 // control more css
-if (vhW < 566) {
-  $(".social-link").css("display", "none");
-  $(".footer-card").css("d");
-}
-if (vhW > 566) {
-  $(".social-link-1").css("display", "none");
-}
+$(document).ready(function () {
+  if (vhW < 566) {
+    console.log("Small size css activated");
+    $(".social-link").css("display", "none");
+  }
+  if (vhW > 566) {
+    $(".social-link-1").css("display", "none");
+  }
+});
