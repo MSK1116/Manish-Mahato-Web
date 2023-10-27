@@ -683,3 +683,57 @@ footer:hover {
   margin: 0 auto;
 }
 /* end of logo */
+
+.type {
+  animation: write-f 3s steps(17) 1, border 3s linear 1;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+@keyframes write-f {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes border {
+  0% {
+    border-right: 2px solid black;
+  }
+  10% {
+    border-right: none;
+  }
+  20% {
+    border-right: 2px solid black;
+  }
+  30% {
+    border: none;
+  }
+  40% {
+    border-right: 2px solid black;
+  }
+  40% {
+    border-right: none;
+  }
+  50% {
+    border-right: 2px solid black;
+  }
+  60% {
+    border: none;
+  }
+  70% {
+    border-right: 2px solid black;
+  }
+  80% {
+    border: none;
+  }
+  90% {
+    border-right: 2px solid black;
+  }
+  100% {
+    border-right: none;
+  }
+}
