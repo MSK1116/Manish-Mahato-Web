@@ -38,13 +38,13 @@
             </a>
           </li>
           <li class="f-center f-15px mr-4px mr-25px">
-            <a href="./index.html" class="f-bold-x">
+            <a href="./pages/About me.html" class="f-bold-x">
               <i class="bi bi-person-arms-up f-25px f-primary-yellow"> </i>
               About Me
             </a>
           </li>
           <li class="f-center f-15px mr-4px mr-25px">
-            <a href="./index.html" class="f-bold-x">
+            <a href="./pages/contact.html" class="f-bold-x">
               <i class="bi bi-person-lines-fill f-25px f-primary-yellow"> </i>
               Contact
             </a>
@@ -135,4 +135,11 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="./javaS DIR/react.js"></script>
   <script src="./javaS DIR/function.js"></script>
+  <script>
+    sessionStorage.clear();
+    markPageLoad();
+    function markPageLoad() {
+      sessionStorage.setItem("markPageLoad", "load");
+    }
+  </script>
 </html>
