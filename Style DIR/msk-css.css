@@ -680,7 +680,9 @@ footer:hover {
 .logo-sm {
   width: 20vh;
   height: 20vh;
+  display: block;
   margin: 0 auto;
+  padding: 5px;
 }
 /* end of logo */
 
@@ -737,3 +739,32 @@ footer:hover {
     border-right: none;
   }
 }
+
+/* CONTACT FORM */
+.login-form {
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 50vh;
+  height: 50vh;
+  padding: 20px;
+  border-radius: 15px 15px 0px 15px;
+}
+
+.input {
+  padding: 5px;
+  width: auto;
+  height: 5vh;
+  margin: 10px;
+  border-radius: 10px 10px 10px 10px;
+  border: 2px black;
+  border-style: ridge;
+}
+
+.input:focus {
+  border: 3px solid;
+  border-color: var(--danger);
+}
+
+/* End of Contact Form */
