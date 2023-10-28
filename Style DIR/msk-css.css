@@ -739,7 +739,9 @@ footer:hover {
     border-right: none;
   }
 }
-
+.login-box-sm {
+  width: 100vh;
+}
 /* CONTACT FORM */
 .login-form {
   background-color: whitesmoke;
