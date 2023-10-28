@@ -185,8 +185,12 @@ ul.no-style {
 .justify-content-between {
   justify-content: space-between;
 }
+.justify-content-evenly {
+  justify-content: space-evenly;
+}
 /* Display-scale */
 .d-flex {
+  flex-wrap: wrap;
   display: flex;
 }
 .d-block {
@@ -274,6 +278,18 @@ ul.no-style {
 .ml-8px {
   margin-left: 8px;
 }
+.ml-2vh {
+  margin-left: 2vh;
+}
+.ml-4vh {
+  margin-left: 4vh;
+}
+.ml-6vh {
+  margin-left: 6vh;
+}
+.ml-8vh {
+  margin-left: 8vh;
+}
 .ml-auto {
   margin-left: 50%;
 }
@@ -333,6 +349,9 @@ ul.no-style {
 /* Font Color */
 .f-white {
   color: white;
+}
+.f-black {
+  color: black;
 }
 .f-primary {
   color: var(--primary-color);
@@ -739,21 +758,101 @@ footer:hover {
     border-right: none;
   }
 }
-.login-box-sm {
-  width: 100vh;
+
+.box {
+  display: block;
+  border-radius: 10px 10px 10px 10px;
+  transition: transform 1s ease-in-out, background-color 2s ease-in;
+  background-color: whitesmoke;
+  padding: 5px;
 }
+.box:hover {
+  transform: scale(1.02);
+  background-color: white;
+}
+.box.box-x {
+  width: 40vh;
+  height: 50vh;
+}
+.box.box-xl {
+  display: block;
+}
+.box.box-xxl {
+  display: block;
+}
+
 /* CONTACT FORM */
+.login-box {
+  margin: 0 auto;
+  background-color: #dad5d6;
+  justify-content: flex-start;
+  display: flex;
+  width: 80%;
+  height: 50vh;
+  border-radius: 15px 15px 0px 15px;
+}
 .login-form {
   background-color: whitesmoke;
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
   width: 50vh;
-  height: 50vh;
   padding: 20px;
-  border-radius: 15px 15px 0px 15px;
+  overflow: hidden;
+  display: none;
+}
+.expand-box {
+  animation: expandX 3s ease-in 1 forwards;
+}
+@keyframes expandX {
+  from {
+    width: 30%;
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 50%;
+  }
+  to {
+    width: 100%;
+    border-radius: 15px 15px 0px 15px;
+    color: whitesmoke;
+  }
+}
+.login-box-exp {
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 30%;
+  height: auto;
+  border-bottom-right-radius: 50%;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
 
+.login-box-exp i {
+  opacity: 0.5;
+  margin-right: 8px;
+  font-size: smaller;
+}
+.expand {
+  text-orientation: upright;
+  writing-mode: vertical-lr;
+  opacity: 0.5;
+  margin-right: 1px;
+  font-size: smaller;
+}
+
+@media (max-width: 655px) {
+  .login-form {
+    margin: 0 auto;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    width: 50vh;
+    height: 50vh;
+    padding: 20px;
+    border-radius: 15px 15px 0px 15px;
+  }
+}
 .input {
   padding: 5px;
   width: auto;

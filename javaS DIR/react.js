@@ -96,9 +96,19 @@ $(document).ready(function () {
   if (vhW < 566) {
     console.log("Small size css activated");
     $(".social-link").css("display", "none");
+    $(".login-box").css("display", "none");
   }
   if (vhW > 566) {
     $(".social-link-1").css("display", "none");
     $("#Name1").addClass("type");
+    $(".login-box-sm").css("display", "none");
   }
+});
+
+$(".login-box-exp").on("click", function () {
+  $(".login-textarea").fadeOut(2);
+  $(".login-box-exp").addClass("expand-box");
+  $(".login-form").fadeIn(4005);
+  $(".login-form").css("display", "flex");
+  $(".login-box-exp").css("justify-content", "center");
 });
