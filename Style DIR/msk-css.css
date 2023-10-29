@@ -815,6 +815,7 @@ footer:hover {
 .box.box-x {
   width: 40vh;
   height: 50vh;
+  max-height: 333px;
 }
 .box.box-xl {
   display: block;
