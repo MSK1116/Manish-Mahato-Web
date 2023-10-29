@@ -34,6 +34,7 @@ body {
 .content {
   justify-content: center;
   align-items: center;
+  width: auto;
 }
 /* nav */
 
@@ -801,7 +802,7 @@ footer:hover {
   display: none;
 }
 .expand-box {
-  animation: expandX 3s ease-in 1 forwards;
+  animation: expandX 2.5s ease-in 1 forwards;
 }
 @keyframes expandX {
   from {
