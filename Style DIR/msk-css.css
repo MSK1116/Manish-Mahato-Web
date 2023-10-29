@@ -929,4 +929,7 @@ footer:hover {
   border-color: var(--danger);
 }
 
+.login-box-sm {
+  width: 90%;
+}
 /* End of Contact Form */
