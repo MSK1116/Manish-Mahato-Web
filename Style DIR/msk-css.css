@@ -139,6 +139,9 @@ a {
   text-decoration: none;
   color: black;
 }
+a:hover {
+  color: #858796;
+}
 /* content */
 .content {
   margin-top: 100px;
@@ -354,8 +357,14 @@ ul.no-style {
 .f-black {
   color: black;
 }
+.f-muted {
+  font-style: var(--gray);
+}
 .f-primary {
   color: var(--primary-color);
+}
+.f-pink {
+  color: var(--pink);
 }
 .f-primary-yellow {
   color: var(--primary-color-yellow);
@@ -441,6 +450,38 @@ ul.no-style {
   width: 50vh;
   height: 4vh;
   border-radius: 20px;
+}
+
+/* opacity-dir */
+.op-1 {
+  opacity: 1;
+}
+.op-09 {
+  opacity: 0.9;
+}
+.op-08 {
+  opacity: 0.8;
+}
+.op-07 {
+  opacity: 0.7;
+}
+.op-06 {
+  opacity: 0.6;
+}
+.op-05 {
+  opacity: 0.5;
+}
+.op-04 {
+  opacity: 0.4;
+}
+.op-03 {
+  opacity: 0.3;
+}
+.op-02 {
+  opacity: 0.2;
+}
+.op-01 {
+  opacity: 0.1;
 }
 /* profile & image */
 .container-1 {
@@ -782,6 +823,25 @@ footer:hover {
   display: block;
 }
 
+.box .box-head {
+  width: auto;
+  height: auto;
+  min-height: 30px;
+  max-height: 35px;
+  background-color: wheat;
+  border-radius: 5px 5px 0px 0px;
+  cursor: auto;
+}
+
+.box-head-image img {
+  width: 100px;
+  width: 150px;
+  margin: 0 auto;
+  display: block;
+  margin-top: 3px;
+  border-radius: 10px 10px 8px 8px;
+  border: 3px solid rgb(212, 197, 197);
+}
 /* CONTACT FORM */
 .login-box {
   margin: 0 auto;
