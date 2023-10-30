@@ -946,3 +946,20 @@ footer:hover {
   margin: 0 auto;
 }
 /* End of Contact Form */
+/* About me */
+.gallery {
+  width: 100%;
+  height: 90vh;
+
+  fill: burlywood;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.g-img {
+  width: auto;
+  height: 100%;
+  margin: 0 auto;
+}
+/* end of about me */
