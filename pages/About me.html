@@ -2,12 +2,86 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
-    <link href="./IMG DIR-ES/Manish_Mahato-logo-removebg-preview.png" rel="icon" />
-    <link href="./Style DIR/msk-css.css" rel="stylesheet" />
+    <link href="../IMG DIR-ES/Manish_Mahato-logo-removebg-preview.png" rel="icon" />
+    <link href="../Style DIR/msk-css.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
     <script src="https://kit.fontawesome.com/964e602695.js" crossorigin="anonymous"></script>
-    <title>About me || Manish Singh Mahato</title>
+
+    <title>About Me || Manish Singh Mahato</title>
   </head>
-  <body></body>
+  <body class="body">
+    <button class="f-25px" id="nav-down"><i id="nav-down-1" class="bi bi-menu-button-fill"></i></button>
+
+    <nav class="">
+      <div class="left">
+        <ul class="nav-item no-style f-center mr-15px">
+          <li class="f-center mr-4px mr-25px">
+            <div class="f-primary-yellow f-20px f-bold type">About me</div>
+          </li>
+        </ul>
+      </div>
+      <div class="right">
+        <ul class="nav-item no-style mr-15px">
+          <li class="f-center f-15px mr-4px mr-25px">
+            <a href="../index.html" class="f-bold-x">
+              <i class="bi bi-house-door-fill f-25px f-primary-yellow"> </i>
+              Home
+            </a>
+          </li>
+
+          <li class="f-center f-15px mr-4px mr-25px">
+            <a href="./pages/wall.html" class="f-bold-x">
+              <i class="bi bi-image f-25px f-primary-yellow"> </i>
+              Wall
+            </a>
+          </li>
+          <li class="f-center f-15px mr-4px mr-25px">
+            <a href="./pages/contact.html" class="f-bold-x">
+              <i class="bi bi-person-lines-fill f-25px f-primary-yellow"> </i>
+              Contact
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="content">
+      <div class="social-link-1">
+        <a href="https://www.facebook.com/manu0519/" target="_blank" class="mr-8px icons facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/manu200694/" target="_blank" class="mr-8px icons"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.tiktok.com/@manu_0519" target="_blank" class="mr-8px icons"><i class="bi bi-tiktok"></i></a>
+        <a href="https://msmahato.com.np" target="_blank" class="mr-8px icons f-primary-yellow"> <i class="bi bi-globe"></i></a>
+      </div>
+
+      <button id="scroll1"><i class="bi bi-rocket"></i></button>
+    </div>
+    <footer>
+      <div class="footer-card f-bold">
+        <p>
+          Developed By: Manish Singh Mahato <br />
+          Barahathwa, Province-2, Nepal<br />
+          contact@msmahato.com.np
+        </p>
+      </div>
+
+      <div class="social-link mt-4vh">
+        <a href="https://www.facebook.com/manu0519/" target="_blank" class="mr-8px icons facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/manu200694/" target="_blank" class="mr-8px icons"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.tiktok.com/@manu_0519" target="_blank" class="mr-8px icons"><i class="bi bi-tiktok"></i></a>
+        <a href="https://msmahato.com.np" target="_blank" class="mr-8px icons f-primary-yellow"> <i class="bi bi-globe"></i></a>
+      </div>
+    </footer>
+  </body>
+  <!-- Scripted file -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="../javaS DIR/react.js"></script>
+  <script src="../javaS DIR/function.js"></script>
+  <script>
+    sessionStorage.clear();
+    markPageLoad();
+    function markPageLoad() {
+      sessionStorage.setItem("markPageLoad", "load");
+    }
+  </script>
 </html>

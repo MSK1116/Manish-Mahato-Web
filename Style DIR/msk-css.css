@@ -835,18 +835,19 @@ footer:hover {
 }
 
 .box-head-image img {
-  width: 100px;
-  width: 150px;
+  min-width: 150px;
+  width: 155px;
   margin: 0 auto;
   display: block;
   margin-top: 3px;
   border-radius: 10px 10px 8px 8px;
   border: 3px solid rgb(212, 197, 197);
+  min-height: 178.33px;
 }
 /* CONTACT FORM */
 .login-box {
   margin: 0 auto;
-  background-color: #dad5d6;
+  background-color: whitesmoke;
   justify-content: flex-start;
   display: flex;
   width: 80%;
@@ -854,13 +855,26 @@ footer:hover {
   border-radius: 15px 15px 0px 15px;
 }
 .login-form {
-  background-color: whitesmoke;
+  background-color: white;
   display: flex;
   flex-direction: column;
   width: 50vh;
   padding: 20px;
   overflow: hidden;
   display: none;
+}
+
+@media (max-width: 655px) {
+  .login-form {
+    margin: 0 auto;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 50vh;
+    padding: 20px;
+    border-radius: 15px 15px 0px 15px;
+  }
 }
 .expand-box {
   animation: expandX 2.5s ease-in 1 forwards;
@@ -878,7 +892,7 @@ footer:hover {
   }
 }
 .login-box-exp {
-  background-color: whitesmoke;
+  background-color: white;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -888,6 +902,7 @@ footer:hover {
   border-top-right-radius: 50%;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
+  cursor: pointer;
 }
 
 .login-box-exp i {
@@ -903,18 +918,6 @@ footer:hover {
   font-size: smaller;
 }
 
-@media (max-width: 655px) {
-  .login-form {
-    margin: 0 auto;
-    background-color: whitesmoke;
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    height: 50vh;
-    padding: 20px;
-    border-radius: 15px 15px 0px 15px;
-  }
-}
 .input {
   padding: 5px;
   width: auto;
@@ -930,6 +933,14 @@ footer:hover {
   border-color: var(--danger);
 }
 
+.login-textarea {
+  width: fit-content;
+  text-align: justify;
+  padding: 30px;
+  max-width: 500px;
+  margin: 0 auto;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
 .login-box-sm {
   width: 90%;
   margin: 0 auto;
