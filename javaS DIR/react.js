@@ -17,7 +17,6 @@ if (vhW > 655) {
 
         x = true;
         down();
-        console.log(x);
       }
       if (newScrollPos < scrollPos) {
         $("nav").slideDown();
@@ -35,14 +34,12 @@ if (vhW > 655) {
     $(".nav-item").slideUp(1000);
     x = true;
     down();
-    console.log(x);
   });
 
   $("#nav-down").css("display", "none");
 
   function down() {
     if (x == true) {
-      console.log("activated");
       $("#nav-down").fadeIn(200); // Added this line to display "nav-down"
       $("#scroll1").fadeIn(200);
       $("#nav-down").on("click", function () {
